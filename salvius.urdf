@@ -6,9 +6,9 @@
   <material name="panel"><color rgba="0.84 0.84 0.79 1"/></material>
 
   <link name="base_link">
-    <visual><geometry><box size="0.235974194 0.330363871 0.141584516"/></geometry><material name="wood"/></visual>
-    <collision><geometry><box size="0.235974194 0.330363871 0.141584516"/></geometry></collision>
-    <inertial><mass value="3"/><inertia ixx="0.032296616" ixy="0" ixz="0" iyy="0.018932499" iyz="0" izz="0.041206027"/></inertial>
+    <visual><geometry><box size="0.15875 0.127 0.1778"/></geometry><material name="wood"/></visual>
+    <collision><geometry><box size="0.15875 0.127 0.1778"/></geometry></collision>
+    <inertial><mass value="3"/><inertia ixx="0.01193546" ixy="0" ixz="0" iyy="0.014203601" iyz="0" izz="0.010332641"/></inertial>
   </link>
   <joint name="torso_mount" type="fixed"><parent link="base_link"/><child link="torso"/><origin xyz="0 0 0.34925"/></joint>
   <link name="torso">
@@ -17,7 +17,17 @@
     <inertial><origin xyz="0 0 0.073025"/><mass value="6"/><inertia ixx="0.067300701" ixy="0" ixz="0" iyy="0.030668501" iyz="0" izz="0.076637976"/></inertial>
   </link>
 
-  <joint name="neck_yaw" type="revolute"><parent link="torso"/><child link="head"/><origin xyz="0 0 0.28575"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="3" velocity="1.570796"/></joint>
+  <joint name="neck_left_rod_torso_anchor" type="fixed"><parent link="torso"/><child link="neck_left_rod_torso_anchor_link"/><origin xyz="0.0365125 0.04445 0.14605"/></joint>
+  <link name="neck_left_rod_torso_anchor_link"/>
+  <joint name="neck_right_rod_torso_anchor" type="fixed"><parent link="torso"/><child link="neck_right_rod_torso_anchor_link"/><origin xyz="0.0365125 -0.04445 0.14605"/></joint>
+  <link name="neck_right_rod_torso_anchor_link"/>
+  <joint name="neck_spine_mount" type="fixed"><parent link="torso"/><child link="neck_spine"/><origin xyz="0 0 0.28575"/></joint>
+  <link name="neck_spine"/>
+  <joint name="neck_pitch" type="revolute"><parent link="neck_spine"/><child link="neck_roll_link"/><axis xyz="0 -1 0"/><limit lower="-1.570796" upper="1.570796" effort="3" velocity="1"/></joint>
+  <link name="neck_roll_link"/>
+  <joint name="neck_roll" type="revolute"><parent link="neck_roll_link"/><child link="neck_upper_axis"/><axis xyz="1 0 0"/><limit lower="-1.570796" upper="1.570796" effort="3" velocity="1"/></joint>
+  <link name="neck_upper_axis"/>
+  <joint name="head_yaw" type="revolute"><parent link="neck_upper_axis"/><child link="head"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="3" velocity="1.570796"/></joint>
   <link name="head">
     <visual><origin xyz="0.072463742 0 0.0762"/><geometry><sphere radius="0.0762"/></geometry><material name="metal"/></visual>
     <visual><origin xyz="0.072463742 0 0.10795"/><geometry><sphere radius="0.0762"/></geometry><material name="metal"/></visual>
@@ -34,7 +44,7 @@
   <joint name="camera_optical_mount" type="fixed"><parent link="head"/><child link="camera_optical_frame"/><origin xyz="0.148663742 0 0.11049" rpy="-1.570796 0 -1.570796"/></joint>
   <link name="camera_optical_frame"/>
 
-  <joint name="left_shoulder_yaw" type="revolute"><parent link="torso"/><child link="left_shoulder_yaw_link"/><origin xyz="0 0.241873548 0.087056452"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="4" velocity="1"/></joint>
+  <joint name="left_shoulder_yaw" type="revolute"><parent link="torso"/><child link="left_shoulder_yaw_link"/><origin xyz="0 0.241873548 0.08255"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="4" velocity="1"/></joint>
   <link name="left_shoulder_yaw_link"/>
   <joint name="left_shoulder_roll" type="revolute"><parent link="left_shoulder_yaw_link"/><child link="left_shoulder_roll_link"/><axis xyz="1 0 0"/><limit lower="-0.523599" upper="1.570796" effort="4" velocity="1"/></joint>
   <link name="left_shoulder_roll_link"/>
@@ -89,7 +99,7 @@
   <joint name="left_thumb_ip" type="revolute"><parent link="left_thumb_proximal"/><child link="left_thumb_distal"/><origin xyz="0 0 -0.04"/><axis xyz="0 -1 0"/><limit lower="0" upper="1.396263" effort="0.2" velocity="1"/></joint>
   <link name="left_thumb_distal"><visual><origin xyz="0 0 -0.015"/><geometry><box size="0.02 0.02 0.03"/></geometry><material name="metal"/></visual><collision><origin xyz="0 0 -0.015"/><geometry><box size="0.02 0.02 0.03"/></geometry></collision><inertial><origin xyz="0 0 -0.015"/><mass value="0.014"/><inertia ixx="0.0000015167" ixy="0" ixz="0" iyy="0.0000015167" iyz="0" izz="0.0000009333"/></inertial></link>
 
-  <joint name="right_shoulder_yaw" type="revolute"><parent link="torso"/><child link="right_shoulder_yaw_link"/><origin xyz="0 -0.241873548 0.087056452"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="4" velocity="1"/></joint>
+  <joint name="right_shoulder_yaw" type="revolute"><parent link="torso"/><child link="right_shoulder_yaw_link"/><origin xyz="0 -0.241873548 0.08255"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="4" velocity="1"/></joint>
   <link name="right_shoulder_yaw_link"/>
   <joint name="right_shoulder_roll" type="revolute"><parent link="right_shoulder_yaw_link"/><child link="right_shoulder_roll_link"/><axis xyz="-1 0 0"/><limit lower="-0.523599" upper="1.570796" effort="4" velocity="1"/></joint>
   <link name="right_shoulder_roll_link"/>
