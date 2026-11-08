@@ -22,6 +22,8 @@
     <visual><origin xyz="0.072463742 0 0.0762"/><geometry><sphere radius="0.0762"/></geometry><material name="metal"/></visual>
     <visual><origin xyz="0.072463742 0 0.10795"/><geometry><sphere radius="0.0762"/></geometry><material name="metal"/></visual>
     <visual><origin xyz="0.072463742 0 0.092075"/><geometry><cylinder radius="0.0762" length="0.03175"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="0.072463742 0.0747 0.092075" rpy="1.570796 0 0"/><geometry><cylinder radius="0.0635" length="0.003"/></geometry><material name="dark"/></visual>
+    <visual><origin xyz="0.072463742 -0.0747 0.092075" rpy="-1.570796 0 0"/><geometry><cylinder radius="0.0635" length="0.003"/></geometry><material name="dark"/></visual>
     <visual><origin xyz="0.1435 0 0.092075" rpy="0 1.570796 0"/><geometry><cylinder radius="0.054" length="0.003"/></geometry><material name="metal"/></visual>
     <visual><origin xyz="0.133325419 0 0.11049" rpy="0 1.570796 0"/><geometry><cylinder radius="0.041295484" length="0.030676645"/></geometry><material name="dark"/></visual>
     <collision><origin xyz="0.072463742 0 0.0762"/><geometry><sphere radius="0.0762"/></geometry></collision>
@@ -146,7 +148,7 @@
   <link name="left_hip_yaw_link"/>
   <joint name="left_hip_roll" type="revolute"><parent link="left_hip_yaw_link"/><child link="left_hip_roll_link"/><axis xyz="1 0 0"/><limit lower="-0.523599" upper="0.785398" effort="10" velocity="1"/></joint>
   <link name="left_hip_roll_link"/>
-  <joint name="left_hip_pitch" type="revolute"><parent link="left_hip_roll_link"/><child link="left_thigh"/><axis xyz="0 -1 0"/><limit lower="-0.523599" upper="2.094395" effort="12" velocity="1"/></joint>
+  <joint name="left_hip_pitch" type="revolute"><parent link="left_hip_roll_link"/><child link="left_thigh"/><axis xyz="0 -1 0"/><limit lower="-1.570796" upper="1.570796" effort="12" velocity="1"/></joint>
   <link name="left_thigh">
     <visual><origin xyz="0 0 -0.206375"/><geometry><box size="0.117987097 0.117987097 0.41275"/></geometry><material name="wood"/></visual>
     <collision><origin xyz="0 0 -0.206375"/><geometry><box size="0.117987097 0.117987097 0.41275"/></geometry></collision>
@@ -171,7 +173,7 @@
   <link name="right_hip_yaw_link"/>
   <joint name="right_hip_roll" type="revolute"><parent link="right_hip_yaw_link"/><child link="right_hip_roll_link"/><axis xyz="-1 0 0"/><limit lower="-0.523599" upper="0.785398" effort="10" velocity="1"/></joint>
   <link name="right_hip_roll_link"/>
-  <joint name="right_hip_pitch" type="revolute"><parent link="right_hip_roll_link"/><child link="right_thigh"/><axis xyz="0 -1 0"/><limit lower="-0.523599" upper="2.094395" effort="12" velocity="1"/></joint>
+  <joint name="right_hip_pitch" type="revolute"><parent link="right_hip_roll_link"/><child link="right_thigh"/><axis xyz="0 -1 0"/><limit lower="-1.570796" upper="1.570796" effort="12" velocity="1"/></joint>
   <link name="right_thigh">
     <visual><origin xyz="0 0 -0.206375"/><geometry><box size="0.117987097 0.117987097 0.41275"/></geometry><material name="wood"/></visual>
     <collision><origin xyz="0 0 -0.206375"/><geometry><box size="0.117987097 0.117987097 0.41275"/></geometry></collision>
