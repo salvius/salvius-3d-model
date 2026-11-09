@@ -1,0 +1,9 @@
+services:
+  salvius-viewer:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../salvius.urdf:/app/model/robot.urdf:ro
+      - ../meshes:/app/model/meshes:ro
+    restart: unless-stopped

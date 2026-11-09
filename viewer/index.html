@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e9e9e3" />
+    <title>Salvius | Robot Workbench</title>
+  </head>
+  <body>
+    <main class="workbench">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Salvius robot workbench">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span>Salvius <small>ROBOT WORKBENCH</small></span>
+        </a>
+        <div class="model-status" id="model-status" role="status">
+          <span class="status-dot"></span><span id="status-text">Loading model</span>
+        </div>
+        <button class="icon-button view-reset" id="view-reset" type="button" title="Reset camera view" aria-label="Reset camera view">⌖</button>
+      </header>
+
+      <section class="stage" aria-label="3D robot viewer">
+        <canvas id="scene" aria-label="Interactive 3D model of the Salvius robot"></canvas>
+        <button class="drag-mode-button" id="drag-mode-toggle" type="button" aria-pressed="false" title="Enable joint dragging" disabled><span aria-hidden="true">↕</span><span>Drag joints</span></button>
+        <div class="stage-caption"><span>MODEL / 01</span><strong>Salvius humanoid</strong><span id="joint-count">-- joints</span></div>
+        <div class="load-error" id="load-error" hidden></div>
+      </section>
+
+      <aside class="controls" aria-label="Robot controls">
+        <div class="panel-heading">
+          <div><span class="eyebrow">ARTICULATION</span><h1>Joint controls</h1></div>
+          <button class="text-button" id="reset-joints" type="button">Reset all</button>
+        </div>
+        <label class="search-field"><span aria-hidden="true">⌕</span><input id="joint-search" type="search" placeholder="Filter joints" autocomplete="off" /></label>
+        <div class="joint-list" id="joint-list"><div class="empty-state">Waiting for robot model...</div></div>
+        <section class="motion-panel" aria-label="Animation playback">
+          <div class="motion-heading"><div><label class="eyebrow" for="animation-select">MOTION</label><select id="animation-select" aria-label="Choose animation"><option value="walk_cycle">Walk cycle</option><option value="wave_look">Wave and look around</option><option value="finger_wiggle">Raised hand finger wiggle</option></select></div><label class="loop-control"><input id="loop-toggle" type="checkbox" checked /><span>Loop</span></label></div>
+          <div class="transport">
+            <button class="play-button" id="play-toggle" type="button" disabled><span id="play-icon">▶</span><span id="play-label">Play</span></button>
+            <span class="time-readout" id="time-readout">0:00 / 0:04</span>
+          </div>
+          <input class="timeline" id="timeline" type="range" min="0" max="4000" value="0" aria-label="Animation timeline" disabled />
+          <div class="timeline-labels"><span>0:00</span><span>0:04</span></div>
+        </section>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

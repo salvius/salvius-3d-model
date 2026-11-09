@@ -1,0 +1,93 @@
+{
+  "name": "Walk cycle",
+  "duration": 4000,
+  "joints": [
+    "left_hip_pitch",
+    "left_knee",
+    "left_ankle_pitch",
+    "right_hip_pitch",
+    "right_knee",
+    "right_ankle_pitch",
+    "left_shoulder_pitch",
+    "left_elbow",
+    "right_shoulder_pitch",
+    "right_elbow"
+  ],
+  "keyframes": [
+    {
+      "time": 0,
+      "values": {
+        "left_hip_pitch": 0.3,
+        "left_knee": 0.5,
+        "left_ankle_pitch": -0.15,
+        "right_hip_pitch": -0.3,
+        "right_knee": 0.08,
+        "right_ankle_pitch": 0.08,
+        "left_shoulder_pitch": 0.04,
+        "left_elbow": 0.18,
+        "right_shoulder_pitch": 0.34,
+        "right_elbow": 0.24
+      }
+    },
+    {
+      "time": 1000,
+      "values": {
+        "left_hip_pitch": -0.25,
+        "left_knee": 0.05,
+        "left_ankle_pitch": 0.1,
+        "right_hip_pitch": 0.25,
+        "right_knee": 0.55,
+        "right_ankle_pitch": -0.18,
+        "left_shoulder_pitch": 0.32,
+        "left_elbow": 0.24,
+        "right_shoulder_pitch": 0.06,
+        "right_elbow": 0.18
+      }
+    },
+    {
+      "time": 2000,
+      "values": {
+        "left_hip_pitch": -0.3,
+        "left_knee": 0.08,
+        "left_ankle_pitch": 0.08,
+        "right_hip_pitch": 0.3,
+        "right_knee": 0.5,
+        "right_ankle_pitch": -0.15,
+        "left_shoulder_pitch": 0.34,
+        "left_elbow": 0.24,
+        "right_shoulder_pitch": 0.04,
+        "right_elbow": 0.18
+      }
+    },
+    {
+      "time": 3000,
+      "values": {
+        "left_hip_pitch": 0.25,
+        "left_knee": 0.55,
+        "left_ankle_pitch": -0.18,
+        "right_hip_pitch": -0.25,
+        "right_knee": 0.05,
+        "right_ankle_pitch": 0.1,
+        "left_shoulder_pitch": 0.06,
+        "left_elbow": 0.18,
+        "right_shoulder_pitch": 0.32,
+        "right_elbow": 0.24
+      }
+    },
+    {
+      "time": 4000,
+      "values": {
+        "left_hip_pitch": 0.3,
+        "left_knee": 0.5,
+        "left_ankle_pitch": -0.15,
+        "right_hip_pitch": -0.3,
+        "right_knee": 0.08,
+        "right_ankle_pitch": 0.08,
+        "left_shoulder_pitch": 0.04,
+        "left_elbow": 0.18,
+        "right_shoulder_pitch": 0.34,
+        "right_elbow": 0.24
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "name": "Wave and look around",
+  "duration": 6500,
+  "joints": [
+    "right_shoulder_yaw",
+    "right_shoulder_roll",
+    "right_shoulder_pitch",
+    "right_elbow",
+    "right_wrist_pitch",
+    "neck_pitch",
+    "neck_roll",
+    "head_yaw"
+  ],
+  "keyframes": [
+    {
+      "time": 0,
+      "values": {
+        "right_shoulder_yaw": 0,
+        "right_shoulder_roll": 0,
+        "right_shoulder_pitch": 0,
+        "right_elbow": 0,
+        "right_wrist_pitch": 0,
+        "neck_pitch": 0,
+        "neck_roll": 0,
+        "head_yaw": 0
+      }
+    },
+    {
+      "time": 900,
+      "values": {
+        "right_shoulder_yaw": 0,
+        "right_shoulder_roll": 0.15,
+        "right_shoulder_pitch": 1.2,
+        "right_elbow": 1.0,
+        "right_wrist_pitch": 0,
+        "neck_pitch": -0.08,
+        "neck_roll": 0,
+        "head_yaw": 0
+      }
+    },
+    {
+      "time": 1500,
+      "values": {
+        "right_wrist_pitch": 0.45,
+        "head_yaw": -0.42,
+        "neck_pitch": -0.08
+      }
+    },
+    {
+      "time": 2100,
+      "values": {
+        "right_wrist_pitch": -0.45,
+        "head_yaw": 0.48,
+        "neck_pitch": 0.04
+      }
+    },
+    {
+      "time": 2700,
+      "values": {
+        "right_wrist_pitch": 0.45,
+        "head_yaw": 0.35,
+        "neck_roll": 0.1
+      }
+    },
+    {
+      "time": 3300,
+      "values": {
+        "right_wrist_pitch": -0.45,
+        "head_yaw": -0.48,
+        "neck_roll": -0.1
+      }
+    },
+    {
+      "time": 3900,
+      "values": {
+        "right_wrist_pitch": 0.45,
+        "head_yaw": -0.2
+      }
+    },
+    {
+      "time": 4500,
+      "values": {
+        "right_wrist_pitch": -0.45,
+        "head_yaw": 0.42,
+        "neck_pitch": 0.04
+      }
+    },
+    {
+      "time": 5100,
+      "values": {
+        "right_wrist_pitch": 0,
+        "head_yaw": 0,
+        "neck_pitch": 0,
+        "neck_roll": 0
+      }
+    },
+    {
+      "time": 5800,
+      "values": {
+        "right_shoulder_yaw": 0,
+        "right_shoulder_roll": 0,
+        "right_shoulder_pitch": 0,
+        "right_elbow": 0,
+        "right_wrist_pitch": 0,
+        "neck_pitch": 0,
+        "neck_roll": 0,
+        "head_yaw": 0
+      }
+    },
+    {
+      "time": 6500,
+      "values": {
+        "right_shoulder_yaw": 0,
+        "right_shoulder_roll": 0,
+        "right_shoulder_pitch": 0,
+        "right_elbow": 0,
+        "right_wrist_pitch": 0,
+        "neck_pitch": 0,
+        "neck_roll": 0,
+        "head_yaw": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "salvius-urdf-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "build": "vite build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "three": "^0.177.0",
+    "urdf-loader": "^0.12.6"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

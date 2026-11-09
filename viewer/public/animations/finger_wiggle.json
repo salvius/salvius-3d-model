@@ -1,0 +1,194 @@
+{
+  "name": "Raised hand finger wiggle",
+  "duration": 6500,
+  "joints": [
+    "left_shoulder_yaw",
+    "left_shoulder_roll",
+    "left_shoulder_pitch",
+    "left_elbow",
+    "left_wrist_pitch",
+    "left_thumb_saddle_opposition",
+    "left_thumb_saddle_flexion",
+    "left_thumb_ip",
+    "left_index_mcp",
+    "left_index_pip",
+    "left_index_dip",
+    "left_middle_mcp",
+    "left_middle_pip",
+    "left_middle_dip",
+    "left_ring_mcp",
+    "left_ring_pip",
+    "left_ring_dip",
+    "left_little_mcp",
+    "left_little_pip",
+    "left_little_dip"
+  ],
+  "keyframes": [
+    {
+      "time": 0,
+      "values": {
+        "left_shoulder_yaw": 0,
+        "left_shoulder_roll": 0,
+        "left_shoulder_pitch": 0,
+        "left_elbow": 0,
+        "left_wrist_pitch": 0,
+        "left_thumb_saddle_opposition": 0,
+        "left_thumb_saddle_flexion": 0,
+        "left_thumb_ip": 0
+      }
+    },
+    {
+      "time": 900,
+      "values": {
+        "left_shoulder_yaw": 0,
+        "left_shoulder_roll": 0.15,
+        "left_shoulder_pitch": 1.2,
+        "left_elbow": 1.0,
+        "left_wrist_pitch": -0.08
+      }
+    },
+    {
+      "time": 1400,
+      "values": {
+        "left_index_mcp": 0.55,
+        "left_index_pip": 0.62,
+        "left_index_dip": 0.35
+      }
+    },
+    {
+      "time": 1800,
+      "values": {
+        "left_index_mcp": 0,
+        "left_index_pip": 0,
+        "left_index_dip": 0,
+        "left_thumb_saddle_opposition": 0.45,
+        "left_thumb_saddle_flexion": 0.55,
+        "left_thumb_ip": 0.42
+      }
+    },
+    {
+      "time": 2200,
+      "values": {
+        "left_middle_mcp": 0.55,
+        "left_middle_pip": 0.62,
+        "left_middle_dip": 0.35,
+        "left_thumb_saddle_opposition": 0.18,
+        "left_thumb_saddle_flexion": 0.12,
+        "left_thumb_ip": 0.08
+      }
+    },
+    {
+      "time": 2600,
+      "values": {
+        "left_middle_mcp": 0,
+        "left_middle_pip": 0,
+        "left_middle_dip": 0,
+        "left_ring_mcp": 0.55,
+        "left_ring_pip": 0.62,
+        "left_ring_dip": 0.35
+      }
+    },
+    {
+      "time": 3000,
+      "values": {
+        "left_ring_mcp": 0,
+        "left_ring_pip": 0,
+        "left_ring_dip": 0,
+        "left_little_mcp": 0.58,
+        "left_little_pip": 0.66,
+        "left_little_dip": 0.38
+      }
+    },
+    {
+      "time": 3400,
+      "values": {
+        "left_little_mcp": 0,
+        "left_little_pip": 0,
+        "left_little_dip": 0,
+        "left_index_mcp": 0.5,
+        "left_index_pip": 0.58,
+        "left_index_dip": 0.32,
+        "left_ring_mcp": 0.5,
+        "left_ring_pip": 0.58,
+        "left_ring_dip": 0.32
+      }
+    },
+    {
+      "time": 3800,
+      "values": {
+        "left_index_mcp": 0,
+        "left_index_pip": 0,
+        "left_index_dip": 0,
+        "left_ring_mcp": 0,
+        "left_ring_pip": 0,
+        "left_ring_dip": 0,
+        "left_middle_mcp": 0.5,
+        "left_middle_pip": 0.58,
+        "left_middle_dip": 0.32,
+        "left_little_mcp": 0.5,
+        "left_little_pip": 0.58,
+        "left_little_dip": 0.32
+      }
+    },
+    {
+      "time": 4200,
+      "values": {
+        "left_middle_mcp": 0,
+        "left_middle_pip": 0,
+        "left_middle_dip": 0,
+        "left_little_mcp": 0,
+        "left_little_pip": 0,
+        "left_little_dip": 0,
+        "left_index_mcp": 0,
+        "left_index_pip": 0,
+        "left_index_dip": 0,
+        "left_ring_mcp": 0,
+        "left_ring_pip": 0,
+        "left_ring_dip": 0,
+        "left_thumb_saddle_opposition": 0.18,
+        "left_thumb_saddle_flexion": 0.12,
+        "left_thumb_ip": 0.08
+      }
+    },
+    {
+      "time": 4600,
+      "values": {
+        "left_thumb_saddle_opposition": 0,
+        "left_thumb_saddle_flexion": 0,
+        "left_thumb_ip": 0,
+        "left_index_mcp": 0,
+        "left_index_pip": 0,
+        "left_index_dip": 0,
+        "left_middle_mcp": 0,
+        "left_middle_pip": 0,
+        "left_middle_dip": 0,
+        "left_ring_mcp": 0,
+        "left_ring_pip": 0,
+        "left_ring_dip": 0,
+        "left_little_mcp": 0,
+        "left_little_pip": 0,
+        "left_little_dip": 0
+      }
+    },
+    {
+      "time": 5800,
+      "values": {
+        "left_shoulder_yaw": 0,
+        "left_shoulder_roll": 0,
+        "left_shoulder_pitch": 0,
+        "left_elbow": 0,
+        "left_wrist_pitch": 0
+      }
+    },
+    {
+      "time": 6500,
+      "values": {
+        "left_shoulder_yaw": 0,
+        "left_shoulder_roll": 0,
+        "left_shoulder_pitch": 0,
+        "left_elbow": 0,
+        "left_wrist_pitch": 0
+      }
+    }
+  ]
+}
