@@ -17,9 +17,33 @@
     <visual><origin xyz="0 0 0.1539875"/><geometry><cylinder radius="0.06985" length="0.015875"/></geometry><material name="wood"/></visual>
     <collision><origin xyz="0 0 0.073025"/><geometry><box size="0.200025 0.33655 0.14605"/></geometry></collision>
     <collision><origin xyz="0 0 0.1539875"/><geometry><cylinder radius="0.06985" length="0.015875"/></geometry></collision>
+    <visual><origin xyz="0.03254 0.03764 0.20165" rpy="0 0.1959 -2.098"/><geometry><cylinder radius="0.008" length="0.065"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="0.02776 0.02945 0.24936" rpy="0 0.1959 -2.098"/><geometry><cylinder radius="0.0045" length="0.0323"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="0.0365125 0.04445 0.161925"/><geometry><sphere radius="0.007"/></geometry><material name="dark"/></visual>
+    <visual><origin xyz="0.03254 -0.03764 0.20165" rpy="0 0.1959 2.098"/><geometry><cylinder radius="0.008" length="0.065"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="0.02776 -0.02945 0.24936" rpy="0 0.1959 2.098"/><geometry><cylinder radius="0.0045" length="0.0323"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="0.0365125 -0.04445 0.161925"/><geometry><sphere radius="0.007"/></geometry><material name="dark"/></visual>
     <inertial><origin xyz="0 0 0.073025"/><mass value="6"/><inertia ixx="0.067300701" ixy="0" ixz="0" iyy="0.030668501" iyz="0" izz="0.076637976"/></inertial>
   </link>
-
+  <link name="neck_upper_disk">
+    <visual><geometry><cylinder radius="0.0508" length="0.015875"/></geometry><material name="wood"/></visual>
+    <collision><geometry><cylinder radius="0.0508" length="0.015875"/></geometry></collision>
+    <visual><origin xyz="-0.0381 0 0"/><geometry><cylinder radius="0.0127" length="0.0254"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="-0.0381 0 0"/><geometry><cylinder radius="0.00635" length="0.0274"/></geometry><material name="dark"/></visual>
+    <visual><origin xyz="-0.0381 0 0.015875"/><geometry><cylinder radius="0.0127" length="0.003175"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="-0.0381 0 -0.015875"/><geometry><cylinder radius="0.0127" length="0.003175"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="0.0254 0.0254 -0.0079375"/><geometry><sphere radius="0.007"/></geometry><material name="dark"/></visual>
+    <visual><origin xyz="0.0254 -0.0254 -0.0079375"/><geometry><sphere radius="0.007"/></geometry><material name="dark"/></visual>
+    <collision><origin xyz="-0.0381 0 0"/><geometry><cylinder radius="0.0127" length="0.0254"/></geometry></collision>
+    <visual><origin xyz="-0.0381 0.0174625 0.0047625"/><geometry><box size="0.009525 0.04445 0.0254"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="-0.0381 -0.0174625 0.0047625"/><geometry><box size="0.009525 0.04445 0.0254"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="-0.0206375 0 0.0047625"/><geometry><box size="0.0254 0.009525 0.0254"/></geometry><material name="metal"/></visual>
+    <visual><origin xyz="-0.0555625 0 0.0047625"/><geometry><box size="0.0254 0.009525 0.0254"/></geometry><material name="metal"/></visual>
+    <collision><origin xyz="-0.0381 0.0174625 0.0047625"/><geometry><box size="0.009525 0.04445 0.0254"/></geometry></collision>
+    <collision><origin xyz="-0.0381 -0.0174625 0.0047625"/><geometry><box size="0.009525 0.04445 0.0254"/></geometry></collision>
+    <collision><origin xyz="-0.0206375 0 0.0047625"/><geometry><box size="0.0254 0.009525 0.0254"/></geometry></collision>
+    <collision><origin xyz="-0.0555625 0 0.0047625"/><geometry><box size="0.0254 0.009525 0.0254"/></geometry></collision>
+  </link>
   <joint name="neck_left_rod_torso_anchor" type="fixed"><parent link="torso"/><child link="neck_left_rod_torso_anchor_link"/><origin xyz="0.0365125 0.04445 0.14605"/></joint>
   <link name="neck_left_rod_torso_anchor_link"/>
   <joint name="neck_right_rod_torso_anchor" type="fixed"><parent link="torso"/><child link="neck_right_rod_torso_anchor_link"/><origin xyz="0.0365125 -0.04445 0.14605"/></joint>
@@ -48,10 +72,11 @@
     <visual><origin xyz="-0.0174625 0 0.0174625"/><geometry><box size="0.009525 0.0127 0.034925"/></geometry><material name="metal"/></visual>
     <collision><origin xyz="0.0174625 0 0.0174625"/><geometry><box size="0.009525 0.0127 0.034925"/></geometry></collision>
     <collision><origin xyz="-0.0174625 0 0.0174625"/><geometry><box size="0.009525 0.0127 0.034925"/></geometry></collision>
-    <visual><origin xyz="0 0 0.03095625"/><geometry><box size="0.0254 0.0254 0.0619125"/></geometry><material name="wood"/></visual>
-    <collision><origin xyz="0 0 0.03095625"/><geometry><box size="0.0254 0.0254 0.0619125"/></geometry></collision>
+    <visual><origin xyz="0.009525 0 0.028575" rpy="0 0.321751 0"/><geometry><box size="0.0254 0.0254 0.060238"/></geometry><material name="wood"/></visual>
+    <collision><origin xyz="0.009525 0 0.028575" rpy="0 0.321751 0"/><geometry><box size="0.0254 0.0254 0.060238"/></geometry></collision>
   </link>
-  <joint name="head_yaw" type="revolute"><parent link="neck_upper_axis"/><child link="head"/><origin xyz="0 0 0.0619125"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="3" velocity="1.570796"/></joint>
+  <joint name="neck_upper_disk_mount" type="fixed"><parent link="neck_upper_axis"/><child link="neck_upper_disk"/><origin xyz="0.05715 0 0.05715"/></joint>
+  <joint name="head_yaw" type="revolute"><parent link="neck_upper_disk"/><child link="head"/><origin xyz="-0.0381 0 0"/><axis xyz="0 0 1"/><limit lower="-1.570796" upper="1.570796" effort="3" velocity="1.570796"/></joint>
   <link name="head">
     <visual><origin xyz="0.072463742 0 0.0762"/><geometry><sphere radius="0.0762"/></geometry><material name="metal"/></visual>
     <visual><origin xyz="0.072463742 0 0.10795"/><geometry><sphere radius="0.0762"/></geometry><material name="metal"/></visual>
