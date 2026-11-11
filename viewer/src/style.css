@@ -49,7 +49,7 @@ button { color: inherit; }
 .icon-button { margin-left: auto; width: 34px; height: 34px; border: 1px solid var(--line); background: transparent; border-radius: 3px; font-size: 21px; line-height: 1; cursor: pointer; }
 .icon-button:disabled { opacity: 0.4; cursor: default; }
 
-.stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #e9e9e3; }
+.stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #59615e; }
 #scene { display: block; width: 100%; height: 100%; outline: none; }
 #scene[data-drag-mode='true'] { touch-action: none; }
 .drag-mode-button { position: absolute; top: 16px; left: 18px; z-index: 1; display: inline-flex; align-items: center; gap: 7px; min-height: 34px; padding: 0 11px; border: 1px solid #d5dad1; border-radius: 3px; background: rgba(251, 251, 248, 0.9); color: #485149; font-size: 11px; font-weight: 700; cursor: pointer; }
@@ -57,8 +57,8 @@ button { color: inherit; }
 .drag-mode-button[aria-pressed='true'] { border-color: var(--green); background: var(--green); color: white; }
 .drag-mode-button:disabled { opacity: 0.5; cursor: default; }
 .stage-caption { position: absolute; left: 22px; bottom: 20px; display: grid; gap: 5px; pointer-events: none; }
-.stage-caption span { color: #6f786f; font: 9px var(--mono); letter-spacing: 0.06em; }
-.stage-caption strong { font-size: 14px; font-weight: 700; }
+.stage-caption span { color: #e0e6df; font: 9px var(--mono); letter-spacing: 0.06em; }
+.stage-caption strong { color: #fff; font-size: 14px; font-weight: 700; }
 .load-error { position: absolute; inset: 20px 20px auto; padding: 14px 16px; max-width: 500px; background: #fff7f1; border-left: 3px solid var(--accent); color: #823d2d; font-size: 13px; }
 
 .controls { display: flex; flex-direction: column; min-height: 0; border-left: 1px solid var(--line); background: var(--paper); }

@@ -20,7 +20,7 @@ const loadError = document.querySelector('#load-error');
 const dragModeButton = document.querySelector('#drag-mode-toggle');
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('#e9e9e3');
+scene.background = new THREE.Color('#59615e');
 
 const camera = new THREE.PerspectiveCamera(36, 1, 0.01, 100);
 camera.position.set(2.9, 2.2, 4.1);
@@ -46,14 +46,14 @@ scene.add(keyLight);
 
 const ground = new THREE.Mesh(
   new THREE.PlaneGeometry(30, 30),
-  new THREE.MeshStandardMaterial({ color: '#d9dad3', roughness: 0.92 }),
+  new THREE.MeshStandardMaterial({ color: '#444b47', roughness: 0.92 }),
 );
 ground.rotation.x = -Math.PI / 2;
 ground.position.y = -0.008;
 ground.receiveShadow = true;
 scene.add(ground);
 
-const grid = new THREE.GridHelper(10, 40, '#a3a99f', '#c8cbc2');
+const grid = new THREE.GridHelper(10, 40, '#78847b', '#606b63');
 grid.position.y = -0.004;
 scene.add(grid);
 const axes = new THREE.AxesHelper(0.35);
